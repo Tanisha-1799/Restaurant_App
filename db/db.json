@@ -1,6 +1,8 @@
 {
     "restaurant": [
       { "id": 1, "name": "Landmark-resto", "author": "tanisha" },
-      { "id": 2, "name": "Anaycha-resto", "author": "tanisha" }
+      { "id": 2, "name": "Anaycha-resto", "author": "tanisha" },
+      { "id": 3, "name": "Celebration-resto", "author": "tanisha" },
+      { "id": 4, "name": "Opal-resto", "author": "tanisha" }
     ]
   }
