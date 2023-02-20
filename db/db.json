@@ -1,5 +1,6 @@
 {
     "restaurant": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+      { "id": 1, "name": "Landmark-resto", "author": "tanisha" },
+      { "id": 2, "name": "Anaycha-resto", "author": "tanisha" }
     ]
   }
