@@ -1,8 +1,54 @@
 {
     "restaurant": [
-      { "id": 1, "name": "Landmark-resto", "author": "tanisha" },
-      { "id": 2, "name": "Anaycha-resto", "author": "tanisha" },
-      { "id": 3, "name": "Celebration-resto", "author": "tanisha" },
-      { "id": 4, "name": "Opal-resto", "author": "tanisha" }
+      { 
+        "id": 1,
+        "name":"Landmark",
+        "address":"Kanpur",
+        "rating":"4.8",
+        "email":"landmark@123.com"
+      },
+      { 
+        "id": 2,
+        "name":"Celebration",
+        "address":"Kanpur",
+        "rating":"4.2",
+        "email":"celebration@123.com"
+      },
+      { 
+        "id": 3,
+        "name":"Kanha Continental",
+        "address":"Kanpur",
+        "rating":"4.6",
+        "email":"kanhacontinental@123.com"
+      },
+      { 
+        "id": 4,
+        "name":"Opal",
+        "address":"Kanpur",
+        "rating":"3.9",
+        "email":"opal@123.com"
+      },
+      { 
+        "id": 5,
+        "name":"RMB",
+        "address":"Kanpur",
+        "rating":"4.5",
+        "email":"rmb@123.com"
+      },
+      { 
+        "id": 6,
+        "name":"Kanha Galaxy",
+        "address":"Kanpur",
+        "rating":"4.9",
+        "email":"kanhagalaxy@123.com"
+      },
+      { 
+        "id": 7,
+        "name":"Anaycha",
+        "address":"Kanpur",
+        "rating":"4.6",
+        "email":"anaycha@123.com"
+      }
+     
     ]
   }
