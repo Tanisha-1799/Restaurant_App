@@ -7,7 +7,7 @@ export default class RestaurantCreate extends Component {
     this.state={
       name:null,
       email:null,
-      location:null,
+      address:null,
       rating:null,
     }
   }
@@ -15,10 +15,13 @@ export default class RestaurantCreate extends Component {
   create(){
     fetch("http://localhost:3000/restaurant",{
       method:"Post",
+      headers:{
+        'Content-Type':'application/json'
+      },
       body:JSON.stringify(this.state)
     }).then((result)=>{
       result.json().then((res)=>{
-        console.warn(res);
+        alert("Restaurant has been added !");
       })
     })
   }
@@ -37,7 +40,7 @@ export default class RestaurantCreate extends Component {
            type="text" 
            placeholder="Restaurant Rating"/><br></br>
            <br></br>
-           <input onChange={(event)=>{this.setState({location:event.target.value})}}
+           <input onChange={(event)=>{this.setState({address:event.target.value})}}
            type="text" 
            placeholder="Restaurant Location"/><br></br>
            <br></br>
