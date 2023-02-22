@@ -3,11 +3,11 @@ import withRouter from './withRouter';
 
 class RestaurantUpdate extends Component {
   render() {
-    console.log('Props:', this.props)
+    //console.log('Props:', this.props)
     return (
       <div>
         <h1>Restaurant Update component</h1>
-        <div>Id: {this.props.params.id}</div>
+        {/**<div>Id: {this.props.params.id}</div> */}
         <div>
           <input onChange={(event)=>{this.setState({name:event.target.value})}}
            type="text" 
