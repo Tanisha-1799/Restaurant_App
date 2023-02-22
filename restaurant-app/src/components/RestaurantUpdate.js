@@ -35,4 +35,5 @@ class RestaurantUpdate extends Component {
   }
 };
 
-export default withRouter(RestaurantUpdate);
+//export default withRouter(RestaurantUpdate);
+export default RestaurantUpdate;
