@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import withRouter from './withRouter';
 
-export default class RestaurantUpdate extends Component {
+class RestaurantUpdate extends Component {
   render() {
-    //console.log(this.props.match.params.id);
+    console.log('Props:', this.props)
     return (
       <div>
         <h1>Restaurant Update component</h1>
+        <div>Id: {this.props.params.id}</div>
         <div>
           <input onChange={(event)=>{this.setState({name:event.target.value})}}
            type="text" 
@@ -31,4 +33,6 @@ export default class RestaurantUpdate extends Component {
       </div>
     )
   }
-}
+};
+
+export default withRouter(RestaurantUpdate);
