@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router,Route,Link, Routes} from 'react-router-dom';
-import {Navbar,Nav,Container} from "react-bootstrap";
+import {Navbar,Nav} from "react-bootstrap";
 import Home from "./components/Home";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantCreate from "./components/RestaurantCreate";
