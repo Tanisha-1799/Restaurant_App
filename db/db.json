@@ -8,11 +8,11 @@
       "email": "landmark@123.com"
     },
     {
-      "id": 2,
       "name": "Celebration",
-      "address": "Kanpur",
+      "email": "celebration@123.com",
+      "address": "North Kanpur",
       "rating": "4.2",
-      "email": "celebration@123.com"
+      "id": 2
     },
     {
       "id": 3,
