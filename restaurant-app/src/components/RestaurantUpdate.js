@@ -28,6 +28,19 @@ class RestaurantUpdate extends Component {
       })
     })
   }
+  update(){
+    fetch("http://localhost:3000/restaurant/"+this.state.id,{
+      method:"Put",
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify(this.state)
+    }).then((result)=>{
+      result.json().then((res)=>{
+        alert("Restaurant has been Updated !");
+      })
+    })
+  }
   render() {
     console.log(this.props.params.id);
     return (
