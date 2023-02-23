@@ -1,11 +1,11 @@
 {
   "restaurant": [
     {
-      "id": 1,
       "name": "Landmark",
+      "email": "landmark@123.com",
       "address": "Kanpur",
-      "rating": "4.8",
-      "email": "landmark@123.com"
+      "rating": "4.5",
+      "id": 1
     },
     {
       "name": "Celebration",

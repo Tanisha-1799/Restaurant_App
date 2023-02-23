@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Table } from "react-bootstrap";
 import {Link} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCoffee, faEdit, faTrash} from '@fortawesome/free-solid-svg-icons';
 
 export default class RestaurantList extends Component {
   constructor() {
@@ -42,7 +44,17 @@ export default class RestaurantList extends Component {
                     <td>{item.rating}</td>
                     <td>{item.address}</td>
                     <td>{item.email}</td>
-                    <td><button className="update-button"><Link to={"/update/"+item.id}>Edit</Link></button></td>
+                    <td>
+                    
+                    <Link to={"/update/"+item.id}>
+                    <FontAwesomeIcon icon={faEdit} color="orange"/>
+                    </Link>
+                    
+                    <Link to={"/update/"+item.id}>
+                    <FontAwesomeIcon className="delete-icon" icon={faTrash} color="red"/>
+                    </Link>
+                    
+                    </td>
                   </tr>
                 ))}
               </tbody>
