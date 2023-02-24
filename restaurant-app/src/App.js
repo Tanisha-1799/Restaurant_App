@@ -16,15 +16,17 @@ function App() {
     <div className="App">
     <Router>
     <Navbar bg="light" expand="lg">
-      
-        <Navbar.Brand href="#home" className='brand'>Resto</Navbar.Brand>
+    <img className='logo-style' src="food_logo.webp"></img>
+        <Navbar.Brand href="#home" className='brand'>
+        Resto
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home" className='link-style'><Link to="/"> <FontAwesomeIcon icon={faHome} color="orange"/>Home</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="/list"> <FontAwesomeIcon icon={faList} color="orange"/>List</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="/create"> <FontAwesomeIcon icon={faPlus} color="orange"/>Create</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="/search"> <FontAwesomeIcon icon={faSearch} color="orange"/>Search</Link></Nav.Link>
+            <Nav.Link href="#home"><Link to="/" className='link-style'> <FontAwesomeIcon icon={faHome} color="blueviolet"/> Home</Link></Nav.Link>
+            <Nav.Link href="#link"><Link to="/list" className='link-style'> <FontAwesomeIcon icon={faList} color="blueviolet"/> List</Link></Nav.Link>
+            <Nav.Link href="#link"><Link to="/create" className='link-style'> <FontAwesomeIcon icon={faPlus} color="blueviolet"/> Create</Link></Nav.Link>
+            <Nav.Link href="#link"><Link to="/search" className='link-style'> <FontAwesomeIcon icon={faSearch} color="blueviolet"/> Search</Link></Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
