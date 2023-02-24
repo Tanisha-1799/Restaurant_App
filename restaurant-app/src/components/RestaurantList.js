@@ -18,6 +18,10 @@ export default class RestaurantList extends Component {
         this.setState({ list: result });
       });
     });
+
+  }
+  delete(){
+    alert("Delete !!")
   }
   render() {
     return (
@@ -50,9 +54,9 @@ export default class RestaurantList extends Component {
                     <FontAwesomeIcon icon={faEdit} color="orange"/>
                     </Link>
                     
-                    <Link to={"/update/"+item.id}>
-                    <FontAwesomeIcon className="delete-icon" icon={faTrash} color="red"/>
-                    </Link>
+                    <span onClick={()=>{this.delete()}}>
+                    <FontAwesomeIcon icon={faTrash} color="red"/>
+                    </span>
                     
                     </td>
                   </tr>
