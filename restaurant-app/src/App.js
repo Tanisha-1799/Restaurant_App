@@ -22,7 +22,7 @@ function App() {
             <Nav.Link href="#link"><Link to="/list">List</Link></Nav.Link>
             <Nav.Link href="#link"><Link to="/create">Create</Link></Nav.Link>
             <Nav.Link href="#link"><Link to="/search">Search</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="/update">Update</Link></Nav.Link>            
+            
           </Nav>
         </Navbar.Collapse>
       
