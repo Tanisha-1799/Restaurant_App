@@ -54,9 +54,9 @@ export default class RestaurantList extends Component {
                     <FontAwesomeIcon icon={faEdit} color="orange"/>
                     </Link>
                     
-                    <span onClick={()=>{this.delete()}}>
+                    <button  className="delete-button"  onClick={()=>{this.delete()}}>
                     <FontAwesomeIcon icon={faTrash} color="red"/>
-                    </span>
+                    </button>
                     
                     </td>
                   </tr>

@@ -15,8 +15,10 @@ span{
 .brand{
   margin-left: 10px;
 }
-.delete-icon{
-  margin-left: 40px;
+.delete-button{
+  margin-left: 30px;
+  border: none;
+  background-color: transparent;
 }
 
 .list-wrapper{
