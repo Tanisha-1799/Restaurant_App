@@ -7,6 +7,9 @@ import RestaurantCreate from "./components/RestaurantCreate";
 import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantUpdate from "./components/RestaurantUpdate";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faHome, faList, faPlus, faSearch} from '@fortawesome/free-solid-svg-icons';
+
 
 function App() {
   return (
@@ -18,10 +21,10 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home"><Link to="/">Home</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="/list">List</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="/create">Create</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="/search">Search</Link></Nav.Link>
+            <Nav.Link href="#home" className='link-style'><Link to="/"> <FontAwesomeIcon icon={faHome} color="orange"/>Home</Link></Nav.Link>
+            <Nav.Link href="#link"><Link to="/list"> <FontAwesomeIcon icon={faList} color="orange"/>List</Link></Nav.Link>
+            <Nav.Link href="#link"><Link to="/create"> <FontAwesomeIcon icon={faPlus} color="orange"/>Create</Link></Nav.Link>
+            <Nav.Link href="#link"><Link to="/search"> <FontAwesomeIcon icon={faSearch} color="orange"/>Search</Link></Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
