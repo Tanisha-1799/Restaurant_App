@@ -50,18 +50,18 @@
       "email": "haldiram@123.com"
     },
     {
-      "name": "KFC",
-      "email": "kfc@123.com",
-      "address": "Kanpur",
-      "rating": "4.5",
-      "id": 9
-    },
-    {
       "name": "Dominos",
       "email": "dominos@123.com",
       "address": "Kanpur",
       "rating": "4.2",
       "id": 10
+    },
+    {
+      "name": "KFC",
+      "email": "kfc@123.com",
+      "address": "North Kanpur",
+      "rating": "4.7",
+      "id": 11
     }
   ]
 }
