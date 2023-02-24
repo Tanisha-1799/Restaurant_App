@@ -6,6 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+.logo-style{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
 span{
   display: inline-block;
   background-color: antiquewhite;
@@ -19,7 +24,9 @@ span{
   
 }
 .brand{
-  margin-left: 10px;
+  margin-left: 3px;
+  font-weight: bold;
+  color: blueviolet !important;
 }
 .delete-button{
   margin-left: 30px;
