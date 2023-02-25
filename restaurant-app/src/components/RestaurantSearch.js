@@ -31,9 +31,10 @@ export default class RestaurantSearch extends Component {
         <div>
           {
             this.state.searchData?
-            <div className='search-row'>
-              {this.state.searchData.map((item)=>
-                <div>
+            <div >
+              {
+                this.state.searchData.map((item)=>
+                <div className='search-row'>
                   {item.name}
                 </div>
                 )}
