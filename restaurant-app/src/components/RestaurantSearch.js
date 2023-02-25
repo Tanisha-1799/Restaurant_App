@@ -5,14 +5,19 @@ export default class RestaurantSearch extends Component {
   constructor(){
     super();
     this.state={
-      searchData:null
+      searchData:null,
+      noData:false
     }
   }
   search(key){
     //console.warn(key);
     fetch("http://localhost:3000/restaurant?q="+key).then((result)=>{
       result.json().then((res)=>{
-       this.setState({searchData:res})
+       if(res.length>0){
+        this.setState({searchData:res, noData:false})
+       }else{
+        this.setState({noData:true, searchData:null})
+       }
       })
     })
   }
@@ -33,7 +38,10 @@ export default class RestaurantSearch extends Component {
                 </div>
                 )}
             </div>
-            :"No result Found"
+            :""
+          }
+          {
+            this.state.noData?<h3>No data Found !!</h3>:null
           }
         </div>
 
