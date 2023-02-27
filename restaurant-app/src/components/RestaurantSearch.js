@@ -11,11 +11,13 @@ export default class RestaurantSearch extends Component {
     super();
     this.state={
       searchData:null,
-      noData:false
+      noData:false,
+      lastSearch:""
     }
   }
   search(key){
     //console.warn(key);
+    this.setState({lastSearch:key})
     fetch("http://localhost:3000/restaurant?q="+key).then((result)=>{
       result.json().then((res)=>{
        if(res.length>0){
@@ -36,7 +38,7 @@ export default class RestaurantSearch extends Component {
     }).then((result)=>{
       result.json().then((res)=>{
         alert("Restaurant Deleted !!");
-        this.getData();
+        this.search(this.state.lastSearch);
       })
     })
   }
