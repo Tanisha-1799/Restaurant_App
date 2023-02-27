@@ -26,6 +26,20 @@ export default class RestaurantSearch extends Component {
       })
     })
   }
+  delete(id){
+    //alert(id+" Delete !!");
+    fetch("http://localhost:3000/restaurant/"+id,{
+      method:"Delete",
+      headers:{
+        'ContentType':"application/json"
+      }
+    }).then((result)=>{
+      result.json().then((res)=>{
+        alert("Restaurant Deleted !!");
+        this.getData();
+      })
+    })
+  }
 
 
   render() {
