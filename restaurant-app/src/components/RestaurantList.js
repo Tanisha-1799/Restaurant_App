@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Table } from "react-bootstrap";
+import { Table, Container } from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCoffee, faEdit, faTrash} from '@fortawesome/free-solid-svg-icons';
@@ -40,8 +40,10 @@ export default class RestaurantList extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
         <h1>Restaurant List</h1>
+        <br></br>
+        <br></br>
         {this.state.list ? (
           <div>
             <Table striped bordered hover>
@@ -82,7 +84,7 @@ export default class RestaurantList extends Component {
         ) : (
           <p>Please Wait...</p>
         )}
-      </div>
+      </Container>
     );
   }
 }

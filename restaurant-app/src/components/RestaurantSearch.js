@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Table } from "react-bootstrap";
+import { Table, Container } from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import Form from 'react-bootstrap/Form';
 import {faCoffee, faEdit, faTrash} from '@fortawesome/free-solid-svg-icons';
 
 
@@ -46,9 +47,13 @@ export default class RestaurantSearch extends Component {
 
   render() {
     return (
-      <div>
+      <Container>
         <h1>Restaurant Search</h1>
-        <input type="text"onChange={(event)=>this.search(event.target.value)}/>
+        <br></br>
+        
+       
+        <Form.Control type="text" onChange={(event)=>this.search(event.target.value)} placeholder="Search Restaurant" />
+        <br></br>
         <div>
           {
             this.state.searchData?
@@ -96,7 +101,7 @@ export default class RestaurantSearch extends Component {
           }
         </div>
 
-      </div>
+      </Container>
     )
   }
 }
