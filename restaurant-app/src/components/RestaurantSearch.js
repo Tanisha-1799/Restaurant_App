@@ -56,7 +56,17 @@ export default class RestaurantSearch extends Component {
                     <td>{item.rating}</td>
                     <td>{item.address}</td>
                     <td>{item.email}</td>
+                    <td>
                     
+                    <Link to={"/update/"+item.id}>
+                    <FontAwesomeIcon icon={faEdit} color="orange"/>
+                    </Link>
+                    
+                    <button  className="delete-button"  onClick={()=>{this.delete(item.id)}}>
+                    <FontAwesomeIcon icon={faTrash} color="red"/>
+                    </button>
+                    
+                    </td>
                   </tr>
                 ))}
               </tbody>
