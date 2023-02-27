@@ -1,4 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Table } from "react-bootstrap";
+import {Link} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCoffee, faEdit, faTrash} from '@fortawesome/free-solid-svg-icons';
+
 
 export default class RestaurantSearch extends Component {
 
@@ -32,12 +37,31 @@ export default class RestaurantSearch extends Component {
           {
             this.state.searchData?
             <div >
-              {
-                this.state.searchData.map((item)=>
-                <div className='search-row'>
-                  {item.name}
-                </div>
-                )}
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Rating</th>
+                  <th>Location</th>
+                  <th>Email</th>
+                  <th>Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                {this.state.searchData.map((item,i) => (
+                  <tr>
+                    <td>{i+1}</td>
+                    <td>{item.name}</td>
+                    <td>{item.rating}</td>
+                    <td>{item.address}</td>
+                    <td>{item.email}</td>
+                    
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+              
             </div>
             :""
           }
