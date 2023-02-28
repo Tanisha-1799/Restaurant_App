@@ -48,6 +48,13 @@
       "address": "South Kanpur",
       "rating": "4.2",
       "email": "haldiram@123.com"
+    },
+    {
+      "name": "Anaicha Restaurant",
+      "email": "anaicha@123.com",
+      "address": "South Kanpur",
+      "rating": "4.5",
+      "id": 9
     }
   ]
 }

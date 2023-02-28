@@ -41,9 +41,10 @@ export default class RestaurantList extends Component {
   render() {
     return (
       <Container>
+      <br></br>
         <h1>Restaurant List</h1>
         <br></br>
-        <br></br>
+        
         {this.state.list ? (
           <div>
             <Table striped bordered hover>

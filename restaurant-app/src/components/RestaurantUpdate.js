@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import withRouter from './withRouter';
+import { Container, Form, Button } from 'react-bootstrap';
 
 
 class RestaurantUpdate extends Component {
@@ -45,38 +46,40 @@ class RestaurantUpdate extends Component {
   render() {
     console.log(this.props.params.id);
     return (
-      <div>
+      <Container>
+      <br></br>
         <h1>Restaurant Update component</h1>
+        <br></br>
        
         <div>
-          <input onChange={(event)=>{this.setState({name:event.target.value})}}
+          <Form.Control onChange={(event)=>{this.setState({name:event.target.value})}}
            type="text" 
            placeholder="Restaurant Name"
            value={this.state.name} 
-           /><br></br>
+           />
            <br></br>
-           <input onChange={(event)=>{this.setState({rating:event.target.value})}}
+           <Form.Control onChange={(event)=>{this.setState({rating:event.target.value})}}
            type="text" 
            placeholder="Restaurant Rating"
            value={this.state.rating} 
-           /><br></br>
+           />
            <br></br>
-           <input onChange={(event)=>{this.setState({address:event.target.value})}}
+           <Form.Control onChange={(event)=>{this.setState({address:event.target.value})}}
            type="text" 
            placeholder="Restaurant Location"
            value={this.state.address} 
-           /><br></br>
+           />
            <br></br>
-           <input onChange={(event)=>{this.setState({email:event.target.value})}}
+           <Form.Control onChange={(event)=>{this.setState({email:event.target.value})}}
            type="text" 
            placeholder="Restaurant Email"
            value={this.state.email} 
-           /><br></br>
+           />
            <br></br>
-           <button onClick={()=>{this.update()}}>Update Restaurant</button>
+           <Button variant="primary" onClick={()=>{this.update()}}>Update Restaurant</Button>
         </div>
         
-      </div>
+      </Container>
     )
   }
 };

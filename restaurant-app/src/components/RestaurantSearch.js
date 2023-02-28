@@ -48,9 +48,9 @@ export default class RestaurantSearch extends Component {
   render() {
     return (
       <Container>
+      <br></br>
         <h1>Restaurant Search</h1>
-        <br></br>
-        
+        <br></br>  
        
         <Form.Control type="text" onChange={(event)=>this.search(event.target.value)} placeholder="Search Restaurant" />
         <br></br>

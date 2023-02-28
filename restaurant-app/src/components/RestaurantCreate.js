@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Container, Form, Button } from 'react-bootstrap';
 
 export default class RestaurantCreate extends Component {
 
@@ -28,30 +28,33 @@ export default class RestaurantCreate extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
+      <br></br>
         <h1>Restaurant Create</h1>
+        <br></br>
         <div>
-          <input onChange={(event)=>{this.setState({name:event.target.value})}}
+          <Form.Control onChange={(event)=>{this.setState({name:event.target.value})}}
            type="text" 
-           placeholder="Restaurant Name"
+           placeholder="Enter Restaurant Name"
             
-           /><br></br>
+           />
            <br></br>
-           <input onChange={(event)=>{this.setState({rating:event.target.value})}}
+           <Form.Control onChange={(event)=>{this.setState({rating:event.target.value})}}
            type="text" 
-           placeholder="Restaurant Rating"/><br></br>
+           placeholder="Enter Restaurant Rating"/>
            <br></br>
-           <input onChange={(event)=>{this.setState({address:event.target.value})}}
+           <Form.Control onChange={(event)=>{this.setState({address:event.target.value})}}
            type="text" 
-           placeholder="Restaurant Location"/><br></br>
+           placeholder="Enter Restaurant Location"/>
            <br></br>
-           <input onChange={(event)=>{this.setState({email:event.target.value})}}
+           <Form.Control onChange={(event)=>{this.setState({email:event.target.value})}}
            type="text" 
-           placeholder="Restaurant Email"/><br></br>
+           placeholder="Enter Restaurant Email"/>
            <br></br>
-           <button onClick={()=>{this.create()}}>Add Restaurant</button>
+          
+           <Button variant="primary" onClick={()=>{this.create()}}>Add Restaurant</Button> 
         </div>
-      </div>
+      </Container>
     )
   }
 }
