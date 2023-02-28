@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Container, Button } from "react-bootstrap";
+import { Navigate } from "react-router-dom";
 
 
 export default class Login extends Component {
@@ -7,15 +8,30 @@ export default class Login extends Component {
         super();
         this.state={
             name:'',
-            password:''
+            password:'',
+            loginCorrect:false
         }
     }
     login(){
-        alert("Login button clicked !!");
+        console.log(this.state);
+      
+    fetch("http://localhost:3000/login?q="+this.state.name).then((result)=>{
+      result.json().then((res)=>{
+       if(res.length>0){
+        this.setState({loginCorrect:true})
+
+       }else{
+        alert("Please Check username and password");
+       }
+      })
+    })
     }
   render() {
     return (
       <Container>
+       {this.state.loginCorrect && (
+          <Navigate to="/list" replace={true} />
+        )}
       <br></br>
       <Form.Control type="text" 
       name='user'

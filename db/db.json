@@ -1,4 +1,10 @@
 {
+  "login":[
+    {
+      "name":"Test",
+      "password":"test"
+    }
+  ],
   "restaurant": [
     {
       "name": "Landmark",
