@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
+import { Navigate } from "react-router-dom";
 
 export default class RestaurantCreate extends Component {
 
@@ -10,6 +11,7 @@ export default class RestaurantCreate extends Component {
       email:null,
       address:null,
       rating:null,
+      created:false
     }
   }
 
@@ -23,12 +25,16 @@ export default class RestaurantCreate extends Component {
     }).then((result)=>{
       result.json().then((res)=>{
         alert("Restaurant has been added !");
+        this.setState({created:true});
       })
     })
   }
   render() {
     return (
       <Container>
+       {this.state.created && (
+          <Navigate to="/list" replace={true} />
+        )}
       <br></br>
         <h1>Restaurant Create</h1>
         <br></br>

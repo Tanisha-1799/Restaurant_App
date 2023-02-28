@@ -1,8 +1,8 @@
 {
-  "login":[
+  "login": [
     {
-      "name":"Test",
-      "password":"test"
+      "name": "Test",
+      "password": "test"
     }
   ],
   "restaurant": [
@@ -68,6 +68,14 @@
       "address": "mumbai",
       "rating": "4.9",
       "id": 10
+    },
+    {
+      "name": "Samocha",
+      "email": "samochaa@123.com",
+      "address": "South Kanpur",
+      "rating": "3.2",
+      "created": false,
+      "id": 11
     }
   ]
 }
