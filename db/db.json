@@ -55,6 +55,13 @@
       "address": "South Kanpur",
       "rating": "4.5",
       "id": 9
+    },
+    {
+      "name": "MBA chai wala",
+      "email": "mbachai@123.com",
+      "address": "mumbai",
+      "rating": "4.9",
+      "id": 10
     }
   ]
 }
