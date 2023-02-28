@@ -8,7 +8,7 @@ import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantUpdate from "./components/RestaurantUpdate";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHome, faList, faPlus, faSearch} from '@fortawesome/free-solid-svg-icons';
+import {faHome, faList, faPlus, faSearch, faUser} from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
             <Nav.Link href="#link"><Link to="/list" className='link-style'> <FontAwesomeIcon icon={faList} color="blueviolet"/> List</Link></Nav.Link>
             <Nav.Link href="#link"><Link to="/create" className='link-style'> <FontAwesomeIcon icon={faPlus} color="blueviolet"/> Create</Link></Nav.Link>
             <Nav.Link href="#link"><Link to="/search" className='link-style'> <FontAwesomeIcon icon={faSearch} color="blueviolet"/> Search</Link></Nav.Link>
-            
+            <Nav.Link href="#link"><Link to="/login" className='link-style'> <FontAwesomeIcon icon={faUser} color="blueviolet"/> Login</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       
@@ -39,6 +39,7 @@ function App() {
       <Route path="/create" element={<RestaurantCreate />}></Route>
       <Route path="/search" element={<RestaurantSearch />}></Route>
       <Route path="/details" element={<RestaurantDetail />}></Route>
+      <Route path="/login" element={<h1>LogIn Page</h1>}></Route>
       <Route path="/update/:id" element={<RestaurantUpdate />}></Route>
       </Routes>
     </Router>
