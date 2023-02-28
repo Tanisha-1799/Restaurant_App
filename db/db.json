@@ -10,8 +10,9 @@
       "name": "Landmark",
       "email": "landmark@123.com",
       "address": "Kanpur",
-      "rating": "4.5",
-      "id": 1
+      "rating": "4.4",
+      "id": 1,
+      "updated": false
     },
     {
       "name": "Celebration",

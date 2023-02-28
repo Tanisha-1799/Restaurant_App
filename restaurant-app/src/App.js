@@ -17,7 +17,7 @@ function App() {
     <div className="App">
     <Router>
     <Navbar bg="light" expand="lg">
-    <img className='logo-style' src="logo_image.png"></img>
+    <img className='logo-style' src="logo_image.png" alt='logo'></img>
         <Navbar.Brand href="#home" className='brand'>
         Resto
         </Navbar.Brand>

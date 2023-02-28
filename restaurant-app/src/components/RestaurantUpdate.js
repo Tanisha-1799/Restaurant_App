@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import withRouter from './withRouter';
 import { Container, Form, Button } from 'react-bootstrap';
+import { Navigate } from "react-router-dom";
 
 
 class RestaurantUpdate extends Component {
@@ -12,7 +13,8 @@ class RestaurantUpdate extends Component {
       email:null,
       address:null,
       rating:null,
-      id:null
+      id:null,
+      updated:false
     }
   }
 
@@ -24,7 +26,8 @@ class RestaurantUpdate extends Component {
           email:result.email,
           address:result.address,
           rating:result.rating,
-          id:result.id
+          id:result.id,
+          
         })
 
       })
@@ -40,6 +43,7 @@ class RestaurantUpdate extends Component {
     }).then((result)=>{
       result.json().then((res)=>{
         alert("Restaurant has been Updated !");
+        this.setState({updated:true})
       })
     })
   }
@@ -47,6 +51,9 @@ class RestaurantUpdate extends Component {
     console.log(this.props.params.id);
     return (
       <Container>
+       {this.state.updated && (
+          <Navigate to="/list" replace={true} />
+        )}
       <br></br>
         <h1>Restaurant Update component</h1>
         <br></br>
