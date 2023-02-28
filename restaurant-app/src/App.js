@@ -9,6 +9,7 @@ import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantUpdate from "./components/RestaurantUpdate";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHome, faList, faPlus, faSearch, faUser} from '@fortawesome/free-solid-svg-icons';
+import Login from './components/Login';
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
       <Route path="/create" element={<RestaurantCreate />}></Route>
       <Route path="/search" element={<RestaurantSearch />}></Route>
       <Route path="/details" element={<RestaurantDetail />}></Route>
-      <Route path="/login" element={<h1>LogIn Page</h1>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
       <Route path="/update/:id" element={<RestaurantUpdate />}></Route>
       </Routes>
     </Router>
