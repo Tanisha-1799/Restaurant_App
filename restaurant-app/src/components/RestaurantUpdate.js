@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import withRouter from './withRouter';
 import { Container, Form, Button } from 'react-bootstrap';
 import { Navigate } from "react-router-dom";
+import NavbarMenu from './NavbarMenu';
 
 
 class RestaurantUpdate extends Component {
@@ -50,6 +51,8 @@ class RestaurantUpdate extends Component {
   render() {
     console.log(this.props.params.id);
     return (
+      <div>
+      <NavbarMenu />
       <Container>
        {this.state.updated && (
           <Navigate to="/list" replace={true} />
@@ -87,6 +90,7 @@ class RestaurantUpdate extends Component {
         </div>
         
       </Container>
+      </div>
     )
   }
 };

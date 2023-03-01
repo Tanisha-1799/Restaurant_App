@@ -7,7 +7,7 @@ import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantUpdate from "./components/RestaurantUpdate";
 import Login from './components/Login';
-import NavbarMenu from './components/NavbarMenu';
+
 import Logout from './components/Logout';
 
 
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
     <Router>
    
-      <NavbarMenu />
+      
       <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/list" element={<RestaurantList />}></Route>

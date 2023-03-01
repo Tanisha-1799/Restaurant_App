@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { Navigate } from "react-router-dom";
+import NavbarMenu from './NavbarMenu';
 
 export default class RestaurantCreate extends Component {
 
@@ -31,6 +32,8 @@ export default class RestaurantCreate extends Component {
   }
   render() {
     return (
+      <div>
+      <NavbarMenu />
       <Container>
        {this.state.created && (
           <Navigate to="/list" replace={true} />
@@ -61,6 +64,7 @@ export default class RestaurantCreate extends Component {
            <Button variant="primary" onClick={()=>{this.create()}}>Add Restaurant</Button> 
         </div>
       </Container>
+      </div>
     )
   }
 }

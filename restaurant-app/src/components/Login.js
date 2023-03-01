@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Container, Button } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
+import NavbarMenu from './NavbarMenu';
 
 
 export default class Login extends Component {
@@ -29,7 +30,10 @@ export default class Login extends Component {
     }
   render() {
     return (
+      <div>
+      <NavbarMenu />
       <Container className='login-style'>
+      
        {this.state.loginCorrect && (
           <Navigate to="/list" replace={true} />
         )}
@@ -53,6 +57,7 @@ export default class Login extends Component {
 
 
       </Container>
+      </div>
     )
   }
 }

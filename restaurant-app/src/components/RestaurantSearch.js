@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Form from 'react-bootstrap/Form';
 import {faCoffee, faEdit, faTrash} from '@fortawesome/free-solid-svg-icons';
+import NavbarMenu from './NavbarMenu';
 
 
 export default class RestaurantSearch extends Component {
@@ -47,6 +48,8 @@ export default class RestaurantSearch extends Component {
 
   render() {
     return (
+      <div>
+      <NavbarMenu />
       <Container>
       <br></br>
         <h1>Restaurant Search</h1>
@@ -102,6 +105,7 @@ export default class RestaurantSearch extends Component {
         </div>
 
       </Container>
+      </div>
     )
   }
 }

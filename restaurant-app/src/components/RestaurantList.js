@@ -3,6 +3,7 @@ import { Table, Container } from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCoffee, faEdit, faTrash} from '@fortawesome/free-solid-svg-icons';
+import NavbarMenu from "./NavbarMenu";
 
 export default class RestaurantList extends Component {
   constructor() {
@@ -40,6 +41,8 @@ export default class RestaurantList extends Component {
   }
   render() {
     return (
+      <div>
+      <NavbarMenu />
       <Container>
       <br></br>
         <h1>Restaurant List</h1>
@@ -86,6 +89,7 @@ export default class RestaurantList extends Component {
           <p>Please Wait...</p>
         )}
       </Container>
+      </div>
     );
   }
 }
