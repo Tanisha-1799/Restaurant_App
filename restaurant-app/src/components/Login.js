@@ -28,19 +28,24 @@ export default class Login extends Component {
     }
   render() {
     return (
-      <Container>
+      <Container className='login-style'>
        {this.state.loginCorrect && (
           <Navigate to="/list" replace={true} />
         )}
+      <br></br>
+      <h1>Login</h1>
       <br></br>
       <Form.Control type="text" 
       name='user'
       onChange={(event)=>this.setState({name:event.target.value})} 
       placeholder="Enter your name" />
+      <br></br>
       <Form.Control type="text"
        name='password' 
       onChange={(event)=>this.setState({password:event.target.value})} 
       placeholder="Enter your password" />
+      <br></br>
+      <br></br>
         <Button variant="primary" onClick={()=>{this.login()}}>Login</Button> 
         
         

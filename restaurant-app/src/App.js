@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router,Route,Link, Routes} from 'react-router-dom';
-import {Navbar,Nav} from "react-bootstrap";
+import {Navbar,Nav, Image} from "react-bootstrap";
 import Home from "./components/Home";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantCreate from "./components/RestaurantCreate";
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
     <Router>
     <Navbar bg="light" expand="lg">
-    <img className='logo-style' src="logo_image.png" alt='logo'></img>
+    <Image className='logo-style' src="logo_image.png" alt='logo'></Image>
         <Navbar.Brand href="#home" className='brand'>
         Resto
         </Navbar.Brand>
