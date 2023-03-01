@@ -18,6 +18,7 @@ export default class Login extends Component {
     fetch("http://localhost:3000/login?q="+this.state.name).then((result)=>{
       result.json().then((res)=>{
        if(res.length>0){
+        localStorage.setItem("login",JSON.stringify(res));
         this.setState({loginCorrect:true})
 
        }else{
