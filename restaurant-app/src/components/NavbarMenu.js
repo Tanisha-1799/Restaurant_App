@@ -23,7 +23,7 @@ export default class NavbarMenu extends Component {
             <Nav.Link href="#link"><Link to="/search" className='link-style'> <FontAwesomeIcon icon={faSearch} color="blueviolet"/> Search</Link></Nav.Link>
             {
                 localStorage.getItem("login")?
-                <Nav.Link href="#link"><Link to="/" className='link-style'> <FontAwesomeIcon icon={faUser} color="blueviolet"/> Logout</Link></Nav.Link>
+                <Nav.Link href="#link"><Link to="/logout" className='link-style'> <FontAwesomeIcon icon={faUser} color="blueviolet"/> Logout</Link></Nav.Link>
                 :
                 <Nav.Link href="#link"><Link to="/login" className='link-style'> <FontAwesomeIcon icon={faUser} color="blueviolet"/> Login</Link></Nav.Link>
           

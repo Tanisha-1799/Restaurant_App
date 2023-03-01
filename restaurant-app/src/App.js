@@ -8,6 +8,7 @@ import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantUpdate from "./components/RestaurantUpdate";
 import Login from './components/Login';
 import NavbarMenu from './components/NavbarMenu';
+import Logout from './components/Logout';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path="/search" element={<RestaurantSearch />}></Route>
       <Route path="/details" element={<RestaurantDetail />}></Route>
       <Route path="/login" element={<Login/>}></Route>
+      <Route path="/logout" element={<Logout/>}></Route>
       <Route path="/update/:id" element={<RestaurantUpdate />}></Route>
       </Routes>
     </Router>
