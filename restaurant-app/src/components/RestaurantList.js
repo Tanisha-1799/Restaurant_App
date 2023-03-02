@@ -57,7 +57,7 @@ export default class RestaurantList extends Component {
                   <th>Name</th>
                   <th>Rating</th>
                   <th>Location</th>
-                  <th>Email</th>
+                 
                   <th>Operation</th>
                 </tr>
               </thead>
@@ -68,7 +68,7 @@ export default class RestaurantList extends Component {
                     <td>{item.name}</td>
                     <td>{item.rating}</td>
                     <td>{item.address}</td>
-                    <td>{item.email}</td>
+                   
                     <td>
                     
                     <Link to={"/update/"+item.id}>
