@@ -7,6 +7,10 @@
     {
       "name": "David Copperfield",
       "password": "david@123"
+    },
+    {
+      "name": "Lorenzo",
+      "password": "lorenzo@123"
     }
   ],
   "restaurant": [
